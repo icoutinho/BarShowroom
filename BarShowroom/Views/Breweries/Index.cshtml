@@ -1,0 +1,36 @@
+﻿@model IEnumerable<BarShowroom.Models.Brewery>
+
+@{
+    ViewBag.Title = "BarShowroom";
+}
+
+<h2>Breweries:</h2>
+Showing @Model.Count() breweries
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.RouteLink(item.Name, "BreweryBeers", new { breweryname = item.Name })
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+            @Html.RouteLink("Show bars", "BreweryBars", new { breweryname = item.Name })
+        </td>
+    </tr>
+}
+
+</table>

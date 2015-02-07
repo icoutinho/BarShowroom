@@ -1,0 +1,11 @@
+﻿@model IEnumerable<BarShowroom.Models.BarShowroomMenuItem>
+
+@{
+    ViewBag.Title = "BarShowroom";
+}
+
+<section class="square-menu">
+    @foreach(var item in Model) {
+        @Html.Partial("BarShowroomMenuItem", item);
+    }
+</section>

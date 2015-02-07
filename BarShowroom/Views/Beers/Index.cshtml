@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BarShowroom.Models.Beer>
+
+@{
+    ViewBag.Title = "BarShowroom";
+}
+
+<h2>Beers:</h2>
+Showing @Model.Count() beers from @ViewBag.bar
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+   
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Brewery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.RouteLink(item.Name, "BeerBars", new { beername = item.Name })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brewery.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
