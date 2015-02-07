@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarShowroom", "BarShowroom\BarShowroom.csproj", "{084974E7-D16C-420D-84FB-9E2A90520AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarShowroom.Tests", "BarShowroom.Tests\BarShowroom.Tests.csproj", "{04A2314F-D986-4992-8092-B1C79C72360D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084974E7-D16C-420D-84FB-9E2A90520AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084974E7-D16C-420D-84FB-9E2A90520AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084974E7-D16C-420D-84FB-9E2A90520AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084974E7-D16C-420D-84FB-9E2A90520AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A2314F-D986-4992-8092-B1C79C72360D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A2314F-D986-4992-8092-B1C79C72360D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A2314F-D986-4992-8092-B1C79C72360D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A2314F-D986-4992-8092-B1C79C72360D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
